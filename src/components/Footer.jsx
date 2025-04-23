@@ -23,7 +23,8 @@ const Footer = () => {
     };
 
   return (
-    <div className="footer">
+<div className={`footer ${animation}`}>
+
       <div className="icon-container">
         <div className="back-rectangle">
           <button onClick={() => handleIconClick('home')}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './News.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faEnvelopeOpen, faHome, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Home = ({ onClose }) => {
   return (

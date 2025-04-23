@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useTransition } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import { Buffer } from "buffer";
 import PlayerCard from "../components/PlayerCard";
@@ -647,7 +647,6 @@ function PlayScreen() {
                     transition: "border-color 0.3s ease",
                     outline: "none",
                     boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.1)",
-                    transition: "transform 0.3s",
                   }}
                   onClick={() => setColor(c)}
                   onMouseEnter={(e) => (e.target.style.borderColor = "#FFA500")}

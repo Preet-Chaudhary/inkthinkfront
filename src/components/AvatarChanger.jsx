@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './AvatarChanger.css'
 /*import { createAvatar } from '@dicebear/core';
 import { openPeeps, adventurer, avataaars, bigEars, bigSmile,
