@@ -25,17 +25,13 @@ const UrgeWithPleasureComponent = () => (
 );
 
 const WordBar = ({ showClock, wordLen, gameStarted, showWords, currentUserDrawing, selectedWord }) => {
-  const [key, setKey] = useState(0);
+
 
   const handleClockClick = () => {
     // Handle clock icon click
     console.log('Clock icon clicked');
   };
 
-  const handleSettingsClick = () => {
-    // Handle settings icon click
-    console.log('Settings icon clicked');
-  };
 
   return (
     
