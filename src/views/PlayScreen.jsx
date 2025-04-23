@@ -33,8 +33,7 @@ function PlayScreen() {
   const navigate = useNavigate()
   const location = useLocation()
   const userDataRecieved = location.state || {};
-  const ENDPOINT = "https://inkthinkback.onrender.com";
-  const ENDPOINT_LOCAL = "http://localhost:3001/";
+ 
   useEffect(() => {
     console.log("user Data revcievd", userDataRecieved)
     let us = localStorage.getItem("username")
@@ -42,9 +41,8 @@ function PlayScreen() {
       navigate("/")
       return;
     }
-    const newSocket = io.connect(process.env.REACT_APP_NODE_ENV === "production"
-    ? ENDPOINT
-    : ENDPOINT_LOCAL, );
+    const newSocket = io.connect(process.env.REACT_APP_BACKEND_URL);
+
     // console.log(newSocket);
     setSocket(newSocket);
     // newSocket.emit("player-joined",newSocket.id)
